@@ -1,0 +1,51 @@
+/* src/pages/Communication/Communication.css */
+
+.communication {
+    padding: 20px;
+    background: url('../../assets/images/communication.jpg') no-repeat center center fixed;
+    background-size: cover;
+  }
+  
+  .communication h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  /* Add additional styles as needed */
+  
+  .communication p {
+    font-size: 1em;
+    line-height: 1.6;
+  }
+  
+  .communication .chat-window {
+    border: 1px solid #ccc;
+    padding: 15px;
+    height: 400px;
+    overflow-y: scroll;
+  }
+  
+  .communication .message-input {
+    margin-top: 10px;
+  }
+  
+  .communication .message-input input {
+    width: 80%;
+    padding: 10px;
+    margin-right: 5px;
+  }
+  
+  .communication .message-input button {
+    padding: 10px 15px;
+  }
+
+/* Remove or comment out any background-related styles */
+/*
+.page-content {
+  background-image: url('../../assets/images/City-banner.jpg');
+  background-size: cover;
+  background-position: center;
+}
+*/
+
+/* Add any Communication-specific styles here */

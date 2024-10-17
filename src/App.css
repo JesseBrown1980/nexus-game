@@ -1,21 +1,40 @@
-.App {
+/* src/App.css */
+
+/* Main App container */
+.app {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Sidebar styles (optional if not in Sidebar.css) */
+.sidebar {
+  width: 200px;
+  background-color: #333;
+  color: #fff;
+  flex-shrink: 0; /* Prevent sidebar from shrinking */
+}
+
+/* Content area */
+.content {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+/* Optional global styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.app-header {
+  background-color: #282c34;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -24,15 +43,122 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.company-icon-small {
+  height: 40px;
+  pointer-events: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.login-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('./assets/images/Login-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.company-icon-large {
+  width: 400px;
+  height: auto;
+  cursor: pointer;
+  /* Add a subtle glow effect */
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.5));
+}
+
+/* Optional: Add a hover effect */
+.company-icon-large:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+/* Additional responsive styles */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
   }
-  to {
-    transform: rotate(360deg);
+
+  .content {
+    padding: 10px;
   }
+}
+
+/* Accessibility improvements */
+:focus {
+  outline: 2px solid #007bff;
+  outline-offset: 2px;
+}
+
+/* Smooth scrolling for modern browsers */
+html {
+  scroll-behavior: smooth;
+}
+
+.page-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding-bottom: 60px; /* Add padding to account for the fixed button bar */
+  /* Ensure there's no conflicting background-image property here */
+}
+
+/* Add styles for the fixed button container */
+.fixed-button-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  z-index: 1000; /* Ensure it's above other content */
+}
+
+/* Style for the buttons */
+.fixed-button-container button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.main-page {
+  /* Styles for the main page layout */
+}
+
+.nav-button-system {
+  /* Styles for the navigation button container */
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.nav-button {
+  /* Styles for individual navigation buttons */
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.nav-button:hover {
+  background-color: #45a049;
+}
+
+#welcome-text {
+  color: #0000FF; /* Blue text */
+  text-shadow: 0 0 10px #FFFF00, 0 0 20px #FFFF00, 0 0 30px #FFFF00; /* Yellow glow effect */
+  font-size: 3em; /* Adjust size as needed */
+  font-weight: bold;
+  text-align: center;
 }

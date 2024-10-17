@@ -1,0 +1,47 @@
+.user-menu {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.user-menu button {
+  background-color: #4CAF50; /* Green background */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.user-menu button:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+.user-menu button:active {
+  background-color: #3e8e41; /* Even darker green when pressed */
+}
+
+.user-menu .user-info {
+  margin-bottom: 10px;
+  color: #333;
+  font-size: 14px;
+}
+
+.user-menu .menu-item {
+  display: block;
+  padding: 8px 12px;
+  color: #333;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+.user-menu .menu-item:hover {
+  background-color: #f0f0f0;
+}

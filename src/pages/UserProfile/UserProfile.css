@@ -1,0 +1,46 @@
+/* src/pages/UserProfile/UserProfile.css */
+
+.user-profile {
+  background: url('../../assets/images/profile.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.user-profile .profile-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.user-profile .profile-header img {
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  margin-right: 20px;
+}
+
+.user-profile h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.user-profile .profile-details {
+  margin-top: 20px;
+}
+
+.user-profile .profile-details ul {
+  list-style: none;
+  padding: 0;
+}
+
+.user-profile .profile-details li {
+  margin-bottom: 10px;
+  font-size: 1em;
+}
+
+.user-profile .edit-profile {
+  margin-top: 20px;
+}
+
+.user-profile .edit-profile button {
+  padding: 10px 15px;
+}

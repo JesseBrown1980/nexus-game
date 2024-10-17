@@ -1,0 +1,74 @@
+/* src/pages/Marketplace/Marketplace.css */
+
+.marketplace {
+    padding: 20px;
+    background: url('../../assets/images/market.jpg') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+    color: white;
+}
+
+.marketplace h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Add more styles as needed */
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.product-item {
+    flex: 1 1 calc(25% - 20px);
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #333;
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+}
+
+.product-item h2 {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.product-item p {
+    font-size: 0.9em;
+    line-height: 1.4;
+}
+
+.product-item button {
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.product-item button:hover {
+    background-color: #555;
+}
+
+@media (max-width: 768px) {
+    .product-item {
+        flex: 1 1 100%;
+    }
+}
+
+/* Remove or comment out any background-related styles if they exist */
+/*
+.page-content {
+    background-image: url('../../assets/images/City-banner.jpg');
+    background-size: cover;
+    background-position: center;
+}
+*/

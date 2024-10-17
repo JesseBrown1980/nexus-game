@@ -1,0 +1,49 @@
+/* src/pages/Workshop/Workshop.css */
+
+.workshop {
+    background: url('../../assets/images/workshop.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.workshop h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.workshop .project-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.workshop .project-item {
+    flex: 1 1 calc(33% - 20px);
+    border: 1px solid #ddd;
+    padding: 15px;
+}
+
+.workshop .project-item h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.workshop .project-item p {
+    font-size: 0.9em;
+    line-height: 1.4;
+}
+
+.workshop .project-item button {
+    margin-top: 10px;
+    padding: 10px 15px;
+}
+
+/* Remove or comment out any background-related styles */
+/*
+.page-content {
+  background-image: url('../../assets/images/City-banner.jpg');
+  background-size: cover;
+  background-position: center;
+}
+*/
+
+/* Add any Workshop-specific styles here */

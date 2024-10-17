@@ -1,0 +1,52 @@
+/* src/pages/Library/Library.css */
+
+.library {
+    padding: 20px;
+    background: url('../../assets/images/library.jpg') no-repeat center center fixed;
+    background-size: cover;
+  }
+  
+  .library h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  /* Add additional styles as needed */
+  
+  .library .book-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .library .book-item {
+    flex: 1 1 calc(25% - 20px);
+    border: 1px solid #ddd;
+    padding: 15px;
+  }
+  
+  .library .book-item img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .library .book-item h2 {
+    font-size: 1.2em;
+    margin: 10px 0;
+  }
+  
+  .library .book-item p {
+    font-size: 0.9em;
+    line-height: 1.4;
+  }
+
+/* Remove or comment out any background-related styles */
+/*
+.page-content {
+  background-image: url('../../assets/images/City-banner.jpg');
+  background-size: cover;
+  background-position: center;
+}
+*/
+
+/* Add any Library-specific styles here */

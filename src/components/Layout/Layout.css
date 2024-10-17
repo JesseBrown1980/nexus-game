@@ -1,0 +1,147 @@
+/* src/components/Layout.css */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+#root {
+  height: 100%;
+}
+
+.app, .layout {
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  padding-bottom: 60px; /* Add padding to account for the bottom navigation */
+}
+
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  z-index: 1000; /* Ensure it's above other content */
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+}
+
+.nav-item.active {
+  color: #007bff; /* Highlight color for active item */
+}
+
+.nav-item span {
+  font-size: 0.8em;
+  margin-top: 5px;
+}
+
+/* Styles for page content */
+.page-content {
+  background-color: rgba(255, 255, 255, 0.8); /* semi-transparent white */
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px;
+  position: relative;
+  z-index: 1; /* Ensure content is above any background */
+}
+
+.page-content::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: white; /* Solid white background */
+  z-index: -1; /* Place it behind the content */
+  border-radius: 10px; /* Match the border-radius of .page-content */
+}
+
+.workshop {
+  background-image: url('../../assets/images/workshop.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+@media (max-width: 768px) {
+  .page-content {
+    margin: 10px;
+    padding: 15px;
+  }
+  
+  .nav-item span {
+    font-size: 0.7em;
+  }
+}
+
+.layout {
+  min-height: 100vh;
+  padding-bottom: 60px; /* Adjust based on your BottomNav height */
+}
+
+.dashboard-background {
+  background-image: url('../../assets/images/dashboard-bg.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.marketplace-background {
+  background-image: url('../../assets/images/marketplace-bg.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Add more background classes for other pages */
+
+.sidebar {
+  width: 80px;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.nav-button {
+  margin-bottom: 20px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  transition: background-color 0.3s;
+}
+
+.nav-button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.nav-button img {
+  width: 30px;
+  height: 30px;
+}
+
+.content {
+  flex-grow: 1;
+  padding: 20px;
+  background-image: url('../../assets/images/workshop.jpg');
+  background-size: cover;
+  background-position: center;
+  overflow-y: auto;
+}

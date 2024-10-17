@@ -1,0 +1,61 @@
+/* src/pages/Dashboard/Dashboard.css */
+
+.dashboard {
+  background: url('../../assets/images/Main-page.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.banner-image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.dashboard h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.highlights,
+.activity-feed {
+  margin-top: 20px;
+}
+
+.highlights .highlight-item,
+.activity-feed .activity-item {
+  background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.highlights .highlight-item h2,
+.activity-feed .activity-item h2 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.highlights .highlight-item p,
+.activity-feed .activity-item p {
+  font-size: 0.9em;
+  line-height: 1.4;
+}
+
+.carousel {
+  margin-bottom: 20px;
+}
+
+.carousel-item img {
+  object-fit: cover;
+  height: 300px; /* Adjust as needed */
+}
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for better text visibility */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+
+
